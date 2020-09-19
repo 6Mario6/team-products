@@ -1,0 +1,28 @@
+@import "./../../../sass/Variables.scss";
+@import "./../../../sass/Mixins.scss";
+
+.banner {
+  &__img {
+    background-image: url('../../../assets/banner/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 412px;
+  }
+
+  &__title {
+      h2 {
+        position: absolute;
+        left: 132px;
+        top: 284px;
+        font-family: 'Source Sans Pro';
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 80.45px;
+        color:$color-white;
+      }
+
+  }
+}

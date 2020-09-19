@@ -1,0 +1,6 @@
+/* Mediaqueries */
+@mixin CustomFrom($size) {
+    @media (max-width: $size) {
+      @content;
+    }
+}
