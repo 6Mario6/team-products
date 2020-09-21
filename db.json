@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Phone",
+      "price": "3000"
+    },
+    {
+      "id": 2,
+      "name": "TV",
+      "price": "5000"
+    },
+    {
+      "id": 3,
+      "name": "PC",
+      "price": "3500"
+    },
+    {
+      "id": 4,
+      "name": "Headphones",
+      "price": "100"
+    },
+    {
+      "id": 5,
+      "name": "Iphone",
+      "price": "300000"
+    },
+    {
+      "name": "fadsfasdf",
+      "price": 323434,
+      "id": 6
+    },
+    {
+      "name": "Test",
+      "price": 2323,
+      "id": 7
+    },
+    {
+      "name": "Test",
+      "price": 23,
+      "id": 8
+    }
+  ]
+}
