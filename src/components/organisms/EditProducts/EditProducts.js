@@ -1,19 +1,23 @@
 import React, {useState, useEffect} from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Form } from 'semantic-ui-react';
+import { Button, Form, Message } from 'semantic-ui-react';
 import {editProductAction} from '../../../actions/productsActions';
-import { useParams } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
+import {useHistory } from 'react-router-dom';
+
 
 const EditProducts = () => { 
   
   const distpatch = useDispatch();
   const history = useHistory();
-  const { id } = useParams();
+  // const { id } = useParams();
   const [product, saveProduct] = useState({
     name: '',
     price: ''
   })
+
+  const loading = useSelector((state) => state.products.loading);
+  const error = useSelector((state) => state.products.error);
+
   const productEdit = useSelector((state) => state.products.productEdit);
   useEffect(() => {
     saveProduct(productEdit);
@@ -36,6 +40,7 @@ const EditProducts = () => {
   }
 
   return(
+    <>
   <Form onSubmit={submitEditProduct}>
     <Form.Field >
       <label>Product Name</label>
@@ -54,6 +59,13 @@ const EditProducts = () => {
     </Form.Field>
     <Button className="button" primary type='submit'>Save Product</Button>
   </Form>
+   {loading && <p>loading...</p>}
+   {error && (
+     <Message negative>
+       <Message.Header>There was an error</Message.Header>
+       <p>Error Editing the product</p>
+     </Message>
+   )}</>
 )
 }
 export default EditProducts;

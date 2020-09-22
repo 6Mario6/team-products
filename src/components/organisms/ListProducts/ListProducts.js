@@ -9,6 +9,7 @@ const ListProducts = () => {
   useEffect(() => {
     const getProducts = () => dispatch(getProductsAction());
     getProducts();
+    //eslint-disable-next-line
   }, []);
   const products = useSelector(state => state.products.products);
   const error = useSelector(state=> state.products.error);

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "semantic-ui-react";
 import { createNewProductAction } from "../../../actions/productsActions";
+import { showAlert, hideAlert } from "../../../actions/alertActions";
 import { useDispatch, useSelector } from "react-redux";
 import { Message } from "semantic-ui-react";
 import { useHistory } from "react-router-dom";
@@ -13,7 +14,7 @@ const CreateProducts = () => {
 
   const loading = useSelector((state) => state.products.loading);
   const error = useSelector((state) => state.products.error);
-
+  const alert = useSelector((state) => state.alert.alert);
   const addProduct = (product) => {
     dispatch(createNewProductAction(product));
   };
@@ -22,16 +23,30 @@ const CreateProducts = () => {
     e.preventDefault();
 
     if (name.trim() === "" || price <= 0) {
+      const alert = {
+        msg: "fields are required",
+      };
+
+      dispatch(showAlert(alert));
       return;
     }
 
+    dispatch(hideAlert());
+
     addProduct({ name, price });
 
-
-    history.push('/');
+    history.push("/");
   };
   return (
     <div>
+      {alert && (
+        <Message negative>
+          <Message.Header>
+            Error
+          </Message.Header>
+          <p>{alert.msg}</p>
+        </Message>
+      )}
       <Form onSubmit={submitProduct}>
         <Form.Field>
           <label>Product Name</label>
