@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Divider, Form } from "semantic-ui-react";
+import { Button, Form } from "semantic-ui-react";
 import { createNewProductAction } from "../../../actions/productsActions";
 import { useDispatch, useSelector } from "react-redux";
 import { Message } from "semantic-ui-react";
@@ -54,7 +54,7 @@ const CreateProducts = () => {
           Add Product
         </Button>
       </Form>
-      {loading && <p>Cargando...</p>}
+      {loading && <p>loading...</p>}
       {error && (
         <Message negative>
           <Message.Header>There was an error</Message.Header>

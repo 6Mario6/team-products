@@ -1,44 +1,34 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Phone",
-      "price": "3000"
-    },
-    {
-      "id": 2,
-      "name": "TV",
-      "price": "5000"
-    },
-    {
-      "id": 3,
-      "name": "PC",
-      "price": "3500"
-    },
-    {
-      "id": 4,
-      "name": "Headphones",
-      "price": "100"
-    },
-    {
-      "id": 5,
       "name": "Iphone",
-      "price": "300000"
-    },
-    {
-      "name": "fadsfasdf",
-      "price": 323434,
-      "id": 6
-    },
-    {
-      "name": "Test",
-      "price": 2323,
-      "id": 7
-    },
-    {
-      "name": "Test",
-      "price": 23,
+      "price": "12",
       "id": 8
+    },
+    {
+      "name": "Testtest",
+      "price": "1",
+      "id": 9
+    },
+    {
+      "name": "NNN",
+      "price": 3432,
+      "id": 10
+    },
+    {
+      "name": "Headphone",
+      "price": 32,
+      "id": 11
+    },
+    {
+      "name": "computer",
+      "price": 434334,
+      "id": 12
+    },
+    {
+      "name": "test",
+      "price": 23,
+      "id": 13
     }
   ]
 }
