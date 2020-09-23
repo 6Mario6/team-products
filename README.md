@@ -1,4 +1,4 @@
-## use json-server
+## use json-server mock services
 json-server db.json --port 4000
 
 

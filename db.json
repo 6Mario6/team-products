@@ -1,17 +1,17 @@
 {
   "products": [
     {
-      "name": "Iphone2",
+      "name": "Iphone22",
       "price": "22222",
       "id": 8
     },
     {
-      "name": "Amazon",
+      "name": "Amazon2",
       "price": "1",
       "id": 9
     },
     {
-      "name": "GoPro",
+      "name": "GoPro4",
       "price": 434334,
       "id": 12
     },
@@ -59,6 +59,11 @@
       "name": "Mug",
       "price": 33,
       "id": 21
+    },
+    {
+      "name": "terst",
+      "price": 23,
+      "id": 22
     }
   ]
 }

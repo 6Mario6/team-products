@@ -4,12 +4,12 @@ import Banner from "./components/organisms/Banner/Banner";
 import Home from "./pages/Home/Home";
 import Create from "./pages/Create/Create";
 import Edit from "./pages/Edit/Edit";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import {Provider} from 'react-redux';
 import store from './store';
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Provider store={store}>
       <Header></Header>
       <Banner />
@@ -22,7 +22,7 @@ function App() {
         </Switch>
       </div>
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
