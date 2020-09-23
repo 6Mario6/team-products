@@ -1,27 +1,17 @@
 {
   "products": [
     {
-      "name": "Iphone",
-      "price": "12",
+      "name": "Iphone2",
+      "price": "22222",
       "id": 8
     },
     {
-      "name": "Testtest",
+      "name": "Amazon",
       "price": "1",
       "id": 9
     },
     {
-      "name": "NNN",
-      "price": 3432,
-      "id": 10
-    },
-    {
-      "name": "Headphone",
-      "price": 32,
-      "id": 11
-    },
-    {
-      "name": "computer",
+      "name": "GoPro",
       "price": 434334,
       "id": 12
     },
@@ -49,6 +39,26 @@
       "name": "Book",
       "price": 333,
       "id": 17
+    },
+    {
+      "name": "Test",
+      "price": 2323,
+      "id": 18
+    },
+    {
+      "name": "new object",
+      "price": 3232,
+      "id": 19
+    },
+    {
+      "name": "bottle",
+      "price": 232,
+      "id": 20
+    },
+    {
+      "name": "Mug",
+      "price": 33,
+      "id": 21
     }
   ]
 }
